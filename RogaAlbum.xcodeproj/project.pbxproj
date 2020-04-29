@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CE3CE8C245A0771005B76E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3CE8B245A0771005B76E4 /* AppDelegate.swift */; };
+		6CE3CE8E245A0771005B76E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3CE8D245A0771005B76E4 /* SceneDelegate.swift */; };
+		6CE3CE90245A0771005B76E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3CE8F245A0771005B76E4 /* ViewController.swift */; };
+		6CE3CE93245A0771005B76E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE3CE91245A0771005B76E4 /* Main.storyboard */; };
+		6CE3CE95245A0776005B76E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CE3CE94245A0776005B76E4 /* Assets.xcassets */; };
+		6CE3CE98245A0776005B76E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE3CE96245A0776005B76E4 /* LaunchScreen.storyboard */; };
+		6CE3CEA3245A0777005B76E4 /* RogaAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3CEA2245A0777005B76E4 /* RogaAlbumTests.swift */; };
+		6CE3CEAE245A0777005B76E4 /* RogaAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3CEAD245A0777005B76E4 /* RogaAlbumUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CE3CE9F245A0777005B76E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CE3CE80245A0771005B76E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CE3CE87245A0771005B76E4;
+			remoteInfo = RogaAlbum;
+		};
+		6CE3CEAA245A0777005B76E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CE3CE80245A0771005B76E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CE3CE87245A0771005B76E4;
+			remoteInfo = RogaAlbum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6CE3CE88245A0771005B76E4 /* RogaAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RogaAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE3CE8B245A0771005B76E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CE3CE8D245A0771005B76E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6CE3CE8F245A0771005B76E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6CE3CE92245A0771005B76E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CE3CE94245A0776005B76E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CE3CE97245A0776005B76E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CE3CE99245A0776005B76E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CE3CE9E245A0777005B76E4 /* RogaAlbumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogaAlbumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE3CEA2245A0777005B76E4 /* RogaAlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogaAlbumTests.swift; sourceTree = "<group>"; };
+		6CE3CEA4245A0777005B76E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CE3CEA9245A0777005B76E4 /* RogaAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogaAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE3CEAD245A0777005B76E4 /* RogaAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogaAlbumUITests.swift; sourceTree = "<group>"; };
+		6CE3CEAF245A0777005B76E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CE3CE85245A0771005B76E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CE3CE9B245A0777005B76E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CE3CEA6245A0777005B76E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CE3CE7F245A0771005B76E4 = {
+			isa = PBXGroup;
+			children = (
+				6CE3CE8A245A0771005B76E4 /* RogaAlbum */,
+				6CE3CEA1245A0777005B76E4 /* RogaAlbumTests */,
+				6CE3CEAC245A0777005B76E4 /* RogaAlbumUITests */,
+				6CE3CE89245A0771005B76E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CE3CE89245A0771005B76E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CE3CE88245A0771005B76E4 /* RogaAlbum.app */,
+				6CE3CE9E245A0777005B76E4 /* RogaAlbumTests.xctest */,
+				6CE3CEA9245A0777005B76E4 /* RogaAlbumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CE3CE8A245A0771005B76E4 /* RogaAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				6CE3CE8B245A0771005B76E4 /* AppDelegate.swift */,
+				6CE3CE8D245A0771005B76E4 /* SceneDelegate.swift */,
+				6CE3CE8F245A0771005B76E4 /* ViewController.swift */,
+				6CE3CE91245A0771005B76E4 /* Main.storyboard */,
+				6CE3CE94245A0776005B76E4 /* Assets.xcassets */,
+				6CE3CE96245A0776005B76E4 /* LaunchScreen.storyboard */,
+				6CE3CE99245A0776005B76E4 /* Info.plist */,
+			);
+			path = RogaAlbum;
+			sourceTree = "<group>";
+		};
+		6CE3CEA1245A0777005B76E4 /* RogaAlbumTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CE3CEA2245A0777005B76E4 /* RogaAlbumTests.swift */,
+				6CE3CEA4245A0777005B76E4 /* Info.plist */,
+			);
+			path = RogaAlbumTests;
+			sourceTree = "<group>";
+		};
+		6CE3CEAC245A0777005B76E4 /* RogaAlbumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6CE3CEAD245A0777005B76E4 /* RogaAlbumUITests.swift */,
+				6CE3CEAF245A0777005B76E4 /* Info.plist */,
+			);
+			path = RogaAlbumUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CE3CE87245A0771005B76E4 /* RogaAlbum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CE3CEB2245A0777005B76E4 /* Build configuration list for PBXNativeTarget "RogaAlbum" */;
+			buildPhases = (
+				6CE3CE84245A0771005B76E4 /* Sources */,
+				6CE3CE85245A0771005B76E4 /* Frameworks */,
+				6CE3CE86245A0771005B76E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RogaAlbum;
+			productName = RogaAlbum;
+			productReference = 6CE3CE88245A0771005B76E4 /* RogaAlbum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CE3CE9D245A0777005B76E4 /* RogaAlbumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CE3CEB5245A0777005B76E4 /* Build configuration list for PBXNativeTarget "RogaAlbumTests" */;
+			buildPhases = (
+				6CE3CE9A245A0777005B76E4 /* Sources */,
+				6CE3CE9B245A0777005B76E4 /* Frameworks */,
+				6CE3CE9C245A0777005B76E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CE3CEA0245A0777005B76E4 /* PBXTargetDependency */,
+			);
+			name = RogaAlbumTests;
+			productName = RogaAlbumTests;
+			productReference = 6CE3CE9E245A0777005B76E4 /* RogaAlbumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6CE3CEA8245A0777005B76E4 /* RogaAlbumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CE3CEB8245A0777005B76E4 /* Build configuration list for PBXNativeTarget "RogaAlbumUITests" */;
+			buildPhases = (
+				6CE3CEA5245A0777005B76E4 /* Sources */,
+				6CE3CEA6245A0777005B76E4 /* Frameworks */,
+				6CE3CEA7245A0777005B76E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CE3CEAB245A0777005B76E4 /* PBXTargetDependency */,
+			);
+			name = RogaAlbumUITests;
+			productName = RogaAlbumUITests;
+			productReference = 6CE3CEA9245A0777005B76E4 /* RogaAlbumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CE3CE80245A0771005B76E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Joao Marcus Dionisio Araujo";
+				TargetAttributes = {
+					6CE3CE87245A0771005B76E4 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					6CE3CE9D245A0777005B76E4 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 6CE3CE87245A0771005B76E4;
+					};
+					6CE3CEA8245A0777005B76E4 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 6CE3CE87245A0771005B76E4;
+					};
+				};
+			};
+			buildConfigurationList = 6CE3CE83245A0771005B76E4 /* Build configuration list for PBXProject "RogaAlbum" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CE3CE7F245A0771005B76E4;
+			productRefGroup = 6CE3CE89245A0771005B76E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CE3CE87245A0771005B76E4 /* RogaAlbum */,
+				6CE3CE9D245A0777005B76E4 /* RogaAlbumTests */,
+				6CE3CEA8245A0777005B76E4 /* RogaAlbumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CE3CE86245A0771005B76E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CE3CE98245A0776005B76E4 /* LaunchScreen.storyboard in Resources */,
+				6CE3CE95245A0776005B76E4 /* Assets.xcassets in Resources */,
+				6CE3CE93245A0771005B76E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CE3CE9C245A0777005B76E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CE3CEA7245A0777005B76E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CE3CE84245A0771005B76E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CE3CE90245A0771005B76E4 /* ViewController.swift in Sources */,
+				6CE3CE8C245A0771005B76E4 /* AppDelegate.swift in Sources */,
+				6CE3CE8E245A0771005B76E4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CE3CE9A245A0777005B76E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CE3CEA3245A0777005B76E4 /* RogaAlbumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CE3CEA5245A0777005B76E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CE3CEAE245A0777005B76E4 /* RogaAlbumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CE3CEA0245A0777005B76E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CE3CE87245A0771005B76E4 /* RogaAlbum */;
+			targetProxy = 6CE3CE9F245A0777005B76E4 /* PBXContainerItemProxy */;
+		};
+		6CE3CEAB245A0777005B76E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CE3CE87245A0771005B76E4 /* RogaAlbum */;
+			targetProxy = 6CE3CEAA245A0777005B76E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CE3CE91245A0771005B76E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CE3CE92245A0771005B76E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CE3CE96245A0776005B76E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CE3CE97245A0776005B76E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CE3CEB0245A0777005B76E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6CE3CEB1245A0777005B76E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CE3CEB3245A0777005B76E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGGNPW2AJS;
+				INFOPLIST_FILE = RogaAlbum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nextframe.RogaAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CE3CEB4245A0777005B76E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGGNPW2AJS;
+				INFOPLIST_FILE = RogaAlbum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nextframe.RogaAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6CE3CEB6245A0777005B76E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGGNPW2AJS;
+				INFOPLIST_FILE = RogaAlbumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nextframe.RogaAlbumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RogaAlbum.app/RogaAlbum";
+			};
+			name = Debug;
+		};
+		6CE3CEB7245A0777005B76E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGGNPW2AJS;
+				INFOPLIST_FILE = RogaAlbumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nextframe.RogaAlbumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RogaAlbum.app/RogaAlbum";
+			};
+			name = Release;
+		};
+		6CE3CEB9245A0777005B76E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGGNPW2AJS;
+				INFOPLIST_FILE = RogaAlbumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nextframe.RogaAlbumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RogaAlbum;
+			};
+			name = Debug;
+		};
+		6CE3CEBA245A0777005B76E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGGNPW2AJS;
+				INFOPLIST_FILE = RogaAlbumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nextframe.RogaAlbumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RogaAlbum;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CE3CE83245A0771005B76E4 /* Build configuration list for PBXProject "RogaAlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CE3CEB0245A0777005B76E4 /* Debug */,
+				6CE3CEB1245A0777005B76E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CE3CEB2245A0777005B76E4 /* Build configuration list for PBXNativeTarget "RogaAlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CE3CEB3245A0777005B76E4 /* Debug */,
+				6CE3CEB4245A0777005B76E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CE3CEB5245A0777005B76E4 /* Build configuration list for PBXNativeTarget "RogaAlbumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CE3CEB6245A0777005B76E4 /* Debug */,
+				6CE3CEB7245A0777005B76E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CE3CEB8245A0777005B76E4 /* Build configuration list for PBXNativeTarget "RogaAlbumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CE3CEB9245A0777005B76E4 /* Debug */,
+				6CE3CEBA245A0777005B76E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CE3CE80245A0771005B76E4 /* Project object */;
+}
