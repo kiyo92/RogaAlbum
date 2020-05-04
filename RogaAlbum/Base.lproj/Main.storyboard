@@ -1,24 +1,262 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Album View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                <viewController modalPresentationStyle="currentContext" id="BYZ-38-t0r" customClass="AlbumViewController" customModule="RogaAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j42-QX-3TS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="w4U-bc-j38">
+                                <rect key="frame" x="20" y="144" width="374" height="752"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gR8-8r-C0Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="752"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gR8-8r-C0Z" firstAttribute="leading" secondItem="w4U-bc-j38" secondAttribute="leading" id="Cgc-ds-HS8"/>
+                                    <constraint firstAttribute="bottom" secondItem="gR8-8r-C0Z" secondAttribute="bottom" id="E2j-HJ-zbZ"/>
+                                    <constraint firstItem="gR8-8r-C0Z" firstAttribute="width" secondItem="w4U-bc-j38" secondAttribute="width" id="N6h-ke-hA7"/>
+                                    <constraint firstItem="gR8-8r-C0Z" firstAttribute="top" secondItem="w4U-bc-j38" secondAttribute="top" id="bSJ-NV-CVc"/>
+                                    <constraint firstAttribute="trailing" secondItem="gR8-8r-C0Z" secondAttribute="trailing" id="hZo-fY-kaB"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="4d0-g2-O94"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="lVs-rs-iH0"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yk-Uw-B9q">
+                                <rect key="frame" x="0.0" y="-44" width="414" height="134"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Albuns" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bb2-Hj-uyy">
+                                        <rect key="frame" x="30" y="80" width="354" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="HQo-Uh-y0R"/>
+                                    <constraint firstAttribute="trailing" secondItem="bb2-Hj-uyy" secondAttribute="trailing" constant="30" id="NPt-Zj-PKS"/>
+                                    <constraint firstItem="bb2-Hj-uyy" firstAttribute="top" secondItem="0yk-Uw-B9q" secondAttribute="top" constant="80" id="Pya-gE-632"/>
+                                    <constraint firstItem="bb2-Hj-uyy" firstAttribute="leading" secondItem="0yk-Uw-B9q" secondAttribute="leading" constant="30" id="gXt-pQ-yXO"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q62-nh-1cI" customClass="CustomButton" customModule="RogaAlbum" customModuleProvider="target">
+                                <rect key="frame" x="299" y="693" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="oko-pU-cxa"/>
+                                    <constraint firstAttribute="height" constant="75" id="tCD-hx-E8e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="50"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="bold"/>
+                                </state>
+                                <connections>
+                                    <action selector="addAlbumPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mey-OA-OgI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0yk-Uw-B9q" firstAttribute="top" secondItem="yYB-ve-DHG" secondAttribute="top" constant="-44" id="Isw-cH-sf1"/>
+                            <constraint firstItem="w4U-bc-j38" firstAttribute="leading" secondItem="yYB-ve-DHG" secondAttribute="leading" constant="20" id="KS6-S0-j21"/>
+                            <constraint firstItem="w4U-bc-j38" firstAttribute="top" secondItem="0yk-Uw-B9q" secondAttribute="bottom" constant="10" id="PrZ-Wg-arD"/>
+                            <constraint firstItem="yYB-ve-DHG" firstAttribute="bottom" secondItem="Q62-nh-1cI" secondAttribute="bottom" constant="40" id="QQq-qD-OaE"/>
+                            <constraint firstItem="yYB-ve-DHG" firstAttribute="trailing" secondItem="w4U-bc-j38" secondAttribute="trailing" constant="20" id="Y2D-Hf-fUh"/>
+                            <constraint firstAttribute="bottom" secondItem="w4U-bc-j38" secondAttribute="bottom" id="eqE-4R-dcX"/>
+                            <constraint firstItem="0yk-Uw-B9q" firstAttribute="trailing" secondItem="j42-QX-3TS" secondAttribute="trailingMargin" constant="20" id="hda-1I-zgp"/>
+                            <constraint firstItem="0yk-Uw-B9q" firstAttribute="leading" secondItem="j42-QX-3TS" secondAttribute="leadingMargin" constant="-20" id="tqW-yb-RBl"/>
+                            <constraint firstItem="yYB-ve-DHG" firstAttribute="trailing" secondItem="Q62-nh-1cI" secondAttribute="trailing" constant="40" id="wk1-Eo-T8g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yYB-ve-DHG"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3jT-zy-Z6p"/>
+                    <connections>
+                        <outlet property="addAlbum" destination="Q62-nh-1cI" id="2vv-my-zkR"/>
+                        <outlet property="stackView" destination="gR8-8r-C0Z" id="i33-N8-QfZ"/>
+                        <segue destination="Mcg-Ca-zQz" kind="presentation" identifier="addAlbum" id="YyN-wP-nwv"/>
+                        <segue destination="RbD-pj-EfP" kind="show" identifier="showPhotos" id="V0y-Tj-eUt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </scene>
+        <!--Album Form Add View Controller-->
+        <scene sceneID="zLB-dU-aeO">
+            <objects>
+                <viewController modalPresentationStyle="formSheet" id="Mcg-Ca-zQz" customClass="AlbumFormAddViewController" customModule="RogaAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UGD-Cf-NnD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyi-s2-sB3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Novo Album" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcP-F7-PIg">
+                                        <rect key="frame" x="30" y="30" width="354" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dcP-F7-PIg" firstAttribute="leading" secondItem="jyi-s2-sB3" secondAttribute="leading" constant="30" id="IAb-1i-vJn"/>
+                                    <constraint firstAttribute="height" constant="90" id="PG5-Hf-aXD"/>
+                                    <constraint firstItem="dcP-F7-PIg" firstAttribute="top" secondItem="jyi-s2-sB3" secondAttribute="top" constant="30" id="QiA-Vf-zYJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="dcP-F7-PIg" secondAttribute="trailing" constant="30" id="gjc-rG-WH2"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="FuH-8K-meU" customClass="CustomTextField" customModule="RogaAlbum" customModuleProvider="target">
+                                <rect key="frame" x="20" y="190" width="374" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="yXc-eF-kuN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isDividerHidden" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dividerNormalHeight">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dividerActiveHeight">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Titulo"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajg-ZG-00N" customClass="CustomButtonDefault" customModule="RogaAlbum" customModuleProvider="target">
+                                <rect key="frame" x="253" y="698" width="141" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="7w2-wN-S2J"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Cadastrar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="Mcg-Ca-zQz" eventType="touchUpInside" id="JgP-Bm-Ej9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FuH-8K-meU" firstAttribute="leading" secondItem="jyi-s2-sB3" secondAttribute="leading" constant="20" id="6SF-jM-bb3"/>
+                            <constraint firstItem="Ajg-ZG-00N" firstAttribute="trailing" secondItem="FuH-8K-meU" secondAttribute="trailing" id="Ajq-4T-Vxz"/>
+                            <constraint firstItem="FuH-8K-meU" firstAttribute="trailing" secondItem="jyi-s2-sB3" secondAttribute="trailing" constant="-20" id="JoA-X3-Pu0"/>
+                            <constraint firstItem="jyi-s2-sB3" firstAttribute="leading" secondItem="UGD-Cf-NnD" secondAttribute="leadingMargin" constant="-20" id="P2J-23-JCp"/>
+                            <constraint firstItem="jyi-s2-sB3" firstAttribute="top" secondItem="1XN-On-ulM" secondAttribute="top" id="Zwp-IF-QSM"/>
+                            <constraint firstItem="Ajg-ZG-00N" firstAttribute="leading" secondItem="1XN-On-ulM" secondAttribute="leading" constant="253" id="a5k-Zx-HpT"/>
+                            <constraint firstItem="jyi-s2-sB3" firstAttribute="trailing" secondItem="UGD-Cf-NnD" secondAttribute="trailingMargin" constant="20" id="dFe-Bv-FU1"/>
+                            <constraint firstItem="FuH-8K-meU" firstAttribute="top" secondItem="jyi-s2-sB3" secondAttribute="bottom" constant="100" id="jgd-Eh-WnR"/>
+                            <constraint firstItem="1XN-On-ulM" firstAttribute="bottom" secondItem="Ajg-ZG-00N" secondAttribute="bottom" constant="46" id="qcX-k4-J0P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1XN-On-ulM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qHU-Ap-AOE"/>
+                    <connections>
+                        <outlet property="titleField" destination="FuH-8K-meU" id="HkM-fF-eHV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RhO-5u-pXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940.57971014492762" y="105.80357142857143"/>
+        </scene>
+        <!--Photo List View Controller-->
+        <scene sceneID="yVz-de-sTJ">
+            <objects>
+                <viewController modalPresentationStyle="currentContext" id="RbD-pj-EfP" customClass="PhotoListViewController" customModule="RogaAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VxS-Cb-f4M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JY5-cn-wrN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="134"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fotos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctk-ZR-nbo">
+                                        <rect key="frame" x="30" y="80" width="354" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxq-20-P49">
+                                        <rect key="frame" x="20" y="80" width="34" height="30"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="performBack:" destination="RbD-pj-EfP" eventType="touchUpInside" id="r19-XX-Txg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pxq-20-P49" firstAttribute="top" secondItem="JY5-cn-wrN" secondAttribute="top" constant="80" id="8h6-pI-zJB"/>
+                                    <constraint firstItem="Ctk-ZR-nbo" firstAttribute="leading" secondItem="JY5-cn-wrN" secondAttribute="leading" constant="30" id="OIC-Wh-8OI"/>
+                                    <constraint firstItem="pxq-20-P49" firstAttribute="leading" secondItem="JY5-cn-wrN" secondAttribute="leading" constant="20" id="XhJ-d8-eNL"/>
+                                    <constraint firstItem="Ctk-ZR-nbo" firstAttribute="top" secondItem="JY5-cn-wrN" secondAttribute="top" constant="80" id="bBc-S3-8lQ"/>
+                                    <constraint firstAttribute="height" constant="134" id="jAZ-b1-vZR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ctk-ZR-nbo" secondAttribute="trailing" constant="30" id="u2K-bj-ad8"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rha-1v-vJM">
+                                <rect key="frame" x="20" y="144" width="374" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" sectionInsetReference="layoutMargins" id="92g-dF-k7O">
+                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="estimatedItemSize" width="150" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photo_cell" id="p4R-c9-wPX" customClass="PhotoCollectionViewCell" customModule="RogaAlbum" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="8" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="knd-xI-Bvu" customClass="CustomCard" customModule="RogaAlbum" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellCard" destination="knd-xI-Bvu" id="DMx-Yb-n0b"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rha-1v-vJM" firstAttribute="top" secondItem="JY5-cn-wrN" secondAttribute="bottom" constant="10" id="GN5-oB-gQa"/>
+                            <constraint firstItem="JY5-cn-wrN" firstAttribute="leading" secondItem="VxS-Cb-f4M" secondAttribute="leadingMargin" constant="-20" id="Jod-ve-IGZ"/>
+                            <constraint firstItem="JY5-cn-wrN" firstAttribute="trailing" secondItem="VxS-Cb-f4M" secondAttribute="trailingMargin" constant="20" id="PyC-07-ll4"/>
+                            <constraint firstItem="JY5-cn-wrN" firstAttribute="top" secondItem="SZh-mh-J5a" secondAttribute="top" constant="-44" id="il6-NN-XjL"/>
+                            <constraint firstItem="rha-1v-vJM" firstAttribute="leading" secondItem="SZh-mh-J5a" secondAttribute="leading" constant="20" id="muh-y2-Mq3"/>
+                            <constraint firstItem="SZh-mh-J5a" firstAttribute="bottom" secondItem="rha-1v-vJM" secondAttribute="bottom" id="sDp-Ar-0C2"/>
+                            <constraint firstItem="SZh-mh-J5a" firstAttribute="trailing" secondItem="rha-1v-vJM" secondAttribute="trailing" constant="20" id="zD3-Na-ogT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SZh-mh-J5a"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dCG-qS-k36"/>
+                    <connections>
+                        <outlet property="collectionView" destination="rha-1v-vJM" id="Y4k-dl-zAk"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="backAlbum" id="Tqb-jo-dTc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tfd-Gt-ygf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113" y="884"/>
         </scene>
     </scenes>
 </document>

@@ -3,18 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002A612FE99D354E54FD81B3 /* Pods_RogaAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D15422E32503698B019658C /* Pods_RogaAlbum.framework */; };
+		56E31BB75D4A0B2F04917B24 /* Pods_RogaAlbumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CA631259710F56E896E0C6 /* Pods_RogaAlbumTests.framework */; };
+		6C1666D0245A4FCB009153DF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1666CF245A4FCB009153DF /* CustomButton.swift */; };
+		6C3FAED0245E3F5800D5B52D /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FAECF245E3F5800D5B52D /* PhotoListViewController.swift */; };
+		6C3FAED2245E452900D5B52D /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FAED1245E452900D5B52D /* PhotoCollectionViewCell.swift */; };
+		6C3FAED4245E5CD700D5B52D /* PhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FAED3245E5CD700D5B52D /* PhotoData.swift */; };
+		6C3FAED6245E621500D5B52D /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FAED5245E621500D5B52D /* PhotoService.swift */; };
+		6C3FAED8245E640F00D5B52D /* PhotoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FAED7245E640F00D5B52D /* PhotoPresenter.swift */; };
+		6C3FAEDA245FB8B500D5B52D /* AlbumFormAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FAED9245FB8B500D5B52D /* AlbumFormAddViewController.swift */; };
+		6C6DC196245B74DE00AD65A8 /* AlbumPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DC195245B74DE00AD65A8 /* AlbumPresenter.swift */; };
+		6C6DC198245B7A7200AD65A8 /* AlbumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DC197245B7A7200AD65A8 /* AlbumData.swift */; };
+		6C6DC19B245B812300AD65A8 /* AlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DC19A245B812300AD65A8 /* AlbumService.swift */; };
+		6C790687245AF25F0045F885 /* CustomCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C790686245AF25F0045F885 /* CustomCard.swift */; };
+		6CC1A344245A3E6F00B46CB4 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC1A343245A3E6F00B46CB4 /* CustomTextField.swift */; };
 		6CE3CE8C245A0771005B76E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3CE8B245A0771005B76E4 /* AppDelegate.swift */; };
 		6CE3CE8E245A0771005B76E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3CE8D245A0771005B76E4 /* SceneDelegate.swift */; };
-		6CE3CE90245A0771005B76E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3CE8F245A0771005B76E4 /* ViewController.swift */; };
+		6CE3CE90245A0771005B76E4 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3CE8F245A0771005B76E4 /* AlbumViewController.swift */; };
 		6CE3CE93245A0771005B76E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE3CE91245A0771005B76E4 /* Main.storyboard */; };
 		6CE3CE95245A0776005B76E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CE3CE94245A0776005B76E4 /* Assets.xcassets */; };
 		6CE3CE98245A0776005B76E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE3CE96245A0776005B76E4 /* LaunchScreen.storyboard */; };
 		6CE3CEA3245A0777005B76E4 /* RogaAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3CEA2245A0777005B76E4 /* RogaAlbumTests.swift */; };
 		6CE3CEAE245A0777005B76E4 /* RogaAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE3CEAD245A0777005B76E4 /* RogaAlbumUITests.swift */; };
+		ECF8928EDC0A4EBD4C8CF9F8 /* Pods_RogaAlbum_RogaAlbumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F01373473A4184DC262238 /* Pods_RogaAlbum_RogaAlbumUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +50,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07CA631259710F56E896E0C6 /* Pods_RogaAlbumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RogaAlbumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		225AB774315DF00E8A4EA52D /* Pods-RogaAlbumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaAlbumTests.debug.xcconfig"; path = "Target Support Files/Pods-RogaAlbumTests/Pods-RogaAlbumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D15422E32503698B019658C /* Pods_RogaAlbum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RogaAlbum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DAB778A67A639109DD9D6E8 /* Pods-RogaAlbum-RogaAlbumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaAlbum-RogaAlbumUITests.debug.xcconfig"; path = "Target Support Files/Pods-RogaAlbum-RogaAlbumUITests/Pods-RogaAlbum-RogaAlbumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		62F63334A859962CD44B345A /* Pods-RogaAlbumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaAlbumTests.release.xcconfig"; path = "Target Support Files/Pods-RogaAlbumTests/Pods-RogaAlbumTests.release.xcconfig"; sourceTree = "<group>"; };
+		6C1666CF245A4FCB009153DF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		6C3FAECF245E3F5800D5B52D /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
+		6C3FAED1245E452900D5B52D /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		6C3FAED3245E5CD700D5B52D /* PhotoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoData.swift; sourceTree = "<group>"; };
+		6C3FAED5245E621500D5B52D /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		6C3FAED7245E640F00D5B52D /* PhotoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPresenter.swift; sourceTree = "<group>"; };
+		6C3FAED9245FB8B500D5B52D /* AlbumFormAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumFormAddViewController.swift; sourceTree = "<group>"; };
+		6C6DC195245B74DE00AD65A8 /* AlbumPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPresenter.swift; sourceTree = "<group>"; };
+		6C6DC197245B7A7200AD65A8 /* AlbumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumData.swift; sourceTree = "<group>"; };
+		6C6DC19A245B812300AD65A8 /* AlbumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumService.swift; sourceTree = "<group>"; };
+		6C790686245AF25F0045F885 /* CustomCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCard.swift; sourceTree = "<group>"; };
+		6CC1A343245A3E6F00B46CB4 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		6CE3CE88245A0771005B76E4 /* RogaAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RogaAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE3CE8B245A0771005B76E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CE3CE8D245A0771005B76E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6CE3CE8F245A0771005B76E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6CE3CE8F245A0771005B76E4 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		6CE3CE92245A0771005B76E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CE3CE94245A0776005B76E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CE3CE97245A0776005B76E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +81,10 @@
 		6CE3CEA9245A0777005B76E4 /* RogaAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogaAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE3CEAD245A0777005B76E4 /* RogaAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogaAlbumUITests.swift; sourceTree = "<group>"; };
 		6CE3CEAF245A0777005B76E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D8D9F6A1E0FB21C593BC11E /* Pods-RogaAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaAlbum.release.xcconfig"; path = "Target Support Files/Pods-RogaAlbum/Pods-RogaAlbum.release.xcconfig"; sourceTree = "<group>"; };
+		C4F01373473A4184DC262238 /* Pods_RogaAlbum_RogaAlbumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RogaAlbum_RogaAlbumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E30CFF28614AB64A8C42B1BE /* Pods-RogaAlbum-RogaAlbumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaAlbum-RogaAlbumUITests.release.xcconfig"; path = "Target Support Files/Pods-RogaAlbum-RogaAlbumUITests/Pods-RogaAlbum-RogaAlbumUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FB2935CA77BFF2EB21679A83 /* Pods-RogaAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaAlbum.debug.xcconfig"; path = "Target Support Files/Pods-RogaAlbum/Pods-RogaAlbum.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002A612FE99D354E54FD81B3 /* Pods_RogaAlbum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56E31BB75D4A0B2F04917B24 /* Pods_RogaAlbumTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +108,84 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF8928EDC0A4EBD4C8CF9F8 /* Pods_RogaAlbum_RogaAlbumUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C1666CB245A4E3C009153DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CE3CE8F245A0771005B76E4 /* AlbumViewController.swift */,
+				6C3FAECF245E3F5800D5B52D /* PhotoListViewController.swift */,
+				6C3FAED9245FB8B500D5B52D /* AlbumFormAddViewController.swift */,
+				6C1666CC245A4E45009153DF /* ViewComponents */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C1666CC245A4E45009153DF /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				6C3FAED1245E452900D5B52D /* PhotoCollectionViewCell.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		6C1666CD245A4E71009153DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6C1666CE245A4E7E009153DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C6DC197245B7A7200AD65A8 /* AlbumData.swift */,
+				6C3FAED3245E5CD700D5B52D /* PhotoData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C6DC194245B6E2000AD65A8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6C6DC195245B74DE00AD65A8 /* AlbumPresenter.swift */,
+				6C3FAED7245E640F00D5B52D /* PhotoPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6C6DC199245B80E300AD65A8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6C3FAED5245E621500D5B52D /* PhotoService.swift */,
+				6C6DC19A245B812300AD65A8 /* AlbumService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6CC1A33F245A37A800B46CB4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				6CC1A340245A37B500B46CB4 /* Components */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		6CC1A340245A37B500B46CB4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6CC1A343245A3E6F00B46CB4 /* CustomTextField.swift */,
+				6C1666CF245A4FCB009153DF /* CustomButton.swift */,
+				6C790686245AF25F0045F885 /* CustomCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		6CE3CE7F245A0771005B76E4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +193,8 @@
 				6CE3CEA1245A0777005B76E4 /* RogaAlbumTests */,
 				6CE3CEAC245A0777005B76E4 /* RogaAlbumUITests */,
 				6CE3CE89245A0771005B76E4 /* Products */,
+				C5E2F702C5432F31E8D46298 /* Pods */,
+				B67AA7B955BA1A299A0CD3F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +211,14 @@
 		6CE3CE8A245A0771005B76E4 /* RogaAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				6C6DC199245B80E300AD65A8 /* Service */,
+				6C6DC194245B6E2000AD65A8 /* Presenter */,
+				6C1666CE245A4E7E009153DF /* Model */,
+				6C1666CD245A4E71009153DF /* Controller */,
+				6C1666CB245A4E3C009153DF /* View */,
+				6CC1A33F245A37A800B46CB4 /* Util */,
 				6CE3CE8B245A0771005B76E4 /* AppDelegate.swift */,
 				6CE3CE8D245A0771005B76E4 /* SceneDelegate.swift */,
-				6CE3CE8F245A0771005B76E4 /* ViewController.swift */,
 				6CE3CE91245A0771005B76E4 /* Main.storyboard */,
 				6CE3CE94245A0776005B76E4 /* Assets.xcassets */,
 				6CE3CE96245A0776005B76E4 /* LaunchScreen.storyboard */,
@@ -128,6 +245,29 @@
 			path = RogaAlbumUITests;
 			sourceTree = "<group>";
 		};
+		B67AA7B955BA1A299A0CD3F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D15422E32503698B019658C /* Pods_RogaAlbum.framework */,
+				C4F01373473A4184DC262238 /* Pods_RogaAlbum_RogaAlbumUITests.framework */,
+				07CA631259710F56E896E0C6 /* Pods_RogaAlbumTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5E2F702C5432F31E8D46298 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB2935CA77BFF2EB21679A83 /* Pods-RogaAlbum.debug.xcconfig */,
+				8D8D9F6A1E0FB21C593BC11E /* Pods-RogaAlbum.release.xcconfig */,
+				4DAB778A67A639109DD9D6E8 /* Pods-RogaAlbum-RogaAlbumUITests.debug.xcconfig */,
+				E30CFF28614AB64A8C42B1BE /* Pods-RogaAlbum-RogaAlbumUITests.release.xcconfig */,
+				225AB774315DF00E8A4EA52D /* Pods-RogaAlbumTests.debug.xcconfig */,
+				62F63334A859962CD44B345A /* Pods-RogaAlbumTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +275,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CE3CEB2245A0777005B76E4 /* Build configuration list for PBXNativeTarget "RogaAlbum" */;
 			buildPhases = (
+				4DD2BB9ABF5ECB7B03F23725 /* [CP] Check Pods Manifest.lock */,
 				6CE3CE84245A0771005B76E4 /* Sources */,
 				6CE3CE85245A0771005B76E4 /* Frameworks */,
 				6CE3CE86245A0771005B76E4 /* Resources */,
+				C88AF83BBA16005A69B18EC2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CE3CEB5245A0777005B76E4 /* Build configuration list for PBXNativeTarget "RogaAlbumTests" */;
 			buildPhases = (
+				F0367A937F866F7FF90A1B3F /* [CP] Check Pods Manifest.lock */,
 				6CE3CE9A245A0777005B76E4 /* Sources */,
 				6CE3CE9B245A0777005B76E4 /* Frameworks */,
 				6CE3CE9C245A0777005B76E4 /* Resources */,
@@ -170,9 +313,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CE3CEB8245A0777005B76E4 /* Build configuration list for PBXNativeTarget "RogaAlbumUITests" */;
 			buildPhases = (
+				817BB5C8FDAF1299B2D1D33D /* [CP] Check Pods Manifest.lock */,
 				6CE3CEA5245A0777005B76E4 /* Sources */,
 				6CE3CEA6245A0777005B76E4 /* Frameworks */,
 				6CE3CEA7245A0777005B76E4 /* Resources */,
+				970225C03C734C619806B627 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,14 +399,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DD2BB9ABF5ECB7B03F23725 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RogaAlbum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		817BB5C8FDAF1299B2D1D33D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RogaAlbum-RogaAlbumUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		970225C03C734C619806B627 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RogaAlbum-RogaAlbumUITests/Pods-RogaAlbum-RogaAlbumUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RogaAlbum-RogaAlbumUITests/Pods-RogaAlbum-RogaAlbumUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RogaAlbum-RogaAlbumUITests/Pods-RogaAlbum-RogaAlbumUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C88AF83BBA16005A69B18EC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RogaAlbum/Pods-RogaAlbum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RogaAlbum/Pods-RogaAlbum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RogaAlbum/Pods-RogaAlbum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0367A937F866F7FF90A1B3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RogaAlbumTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6CE3CE84245A0771005B76E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CE3CE90245A0771005B76E4 /* ViewController.swift in Sources */,
+				6C3FAEDA245FB8B500D5B52D /* AlbumFormAddViewController.swift in Sources */,
+				6C6DC196245B74DE00AD65A8 /* AlbumPresenter.swift in Sources */,
+				6CE3CE90245A0771005B76E4 /* AlbumViewController.swift in Sources */,
+				6C3FAED4245E5CD700D5B52D /* PhotoData.swift in Sources */,
 				6CE3CE8C245A0771005B76E4 /* AppDelegate.swift in Sources */,
+				6C790687245AF25F0045F885 /* CustomCard.swift in Sources */,
+				6C3FAED8245E640F00D5B52D /* PhotoPresenter.swift in Sources */,
+				6CC1A344245A3E6F00B46CB4 /* CustomTextField.swift in Sources */,
+				6C3FAED6245E621500D5B52D /* PhotoService.swift in Sources */,
+				6C3FAED0245E3F5800D5B52D /* PhotoListViewController.swift in Sources */,
+				6C6DC19B245B812300AD65A8 /* AlbumService.swift in Sources */,
+				6C6DC198245B7A7200AD65A8 /* AlbumData.swift in Sources */,
 				6CE3CE8E245A0771005B76E4 /* SceneDelegate.swift in Sources */,
+				6C3FAED2245E452900D5B52D /* PhotoCollectionViewCell.swift in Sources */,
+				6C1666D0245A4FCB009153DF /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +692,7 @@
 		};
 		6CE3CEB3245A0777005B76E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB2935CA77BFF2EB21679A83 /* Pods-RogaAlbum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +711,7 @@
 		};
 		6CE3CEB4245A0777005B76E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D8D9F6A1E0FB21C593BC11E /* Pods-RogaAlbum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +730,7 @@
 		};
 		6CE3CEB6245A0777005B76E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 225AB774315DF00E8A4EA52D /* Pods-RogaAlbumTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +753,7 @@
 		};
 		6CE3CEB7245A0777005B76E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62F63334A859962CD44B345A /* Pods-RogaAlbumTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +776,7 @@
 		};
 		6CE3CEB9245A0777005B76E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DAB778A67A639109DD9D6E8 /* Pods-RogaAlbum-RogaAlbumUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +797,7 @@
 		};
 		6CE3CEBA245A0777005B76E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E30CFF28614AB64A8C42B1BE /* Pods-RogaAlbum-RogaAlbumUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
